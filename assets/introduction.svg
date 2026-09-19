@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="450" viewBox="0 0 760 450" role="img" aria-label="Introduction diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f2ff"/>
+      <stop offset="1" stop-color="#f5fff6"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="450" fill="url(#bg)"/>
+  <text x="380" y="55" text-anchor="middle" font-family="Arial" font-size="26" fill="#0c3c60" font-weight="700">Biomass Residues and Carbon Opportunity</text>
+  <rect x="70" y="110" width="220" height="140" rx="14" fill="#ffffff" stroke="#87a8c7"/>
+  <text x="180" y="150" text-anchor="middle" font-size="22" font-family="Arial" fill="#1f4a6d" font-weight="700">779.6 Mt</text>
+  <text x="180" y="180" text-anchor="middle" font-size="16" font-family="Arial" fill="#3a5f7f">Agricultural residues</text>
+  <text x="180" y="205" text-anchor="middle" font-size="16" font-family="Arial" fill="#3a5f7f">Brazil · 2021</text>
+  <rect x="470" y="110" width="220" height="140" rx="14" fill="#ffffff" stroke="#87a8c7"/>
+  <text x="580" y="150" text-anchor="middle" font-size="22" font-family="Arial" fill="#1f4a6d" font-weight="700">4.95 Mt</text>
+  <text x="580" y="180" text-anchor="middle" font-size="16" font-family="Arial" fill="#3a5f7f">Forestry residues</text>
+  <text x="580" y="205" text-anchor="middle" font-size="16" font-family="Arial" fill="#3a5f7f">Brazil · 2019</text>
+  <path d="M300 180 L455 180" stroke="#00796b" stroke-width="6" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00796b"/>
+    </marker>
+  </defs>
+  <rect x="225" y="285" width="310" height="120" rx="14" fill="#ffffff" stroke="#7bb99c"/>
+  <text x="380" y="330" text-anchor="middle" font-size="24" font-family="Arial" fill="#155a4a" font-weight="700">Biochar Potential</text>
+  <text x="380" y="360" text-anchor="middle" font-size="16" font-family="Arial" fill="#2a6d5f">Soil improvement + carbon storage</text>
+</svg>

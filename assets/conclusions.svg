@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="450" viewBox="0 0 760 450" role="img" aria-label="Conclusions diagram">
+  <rect width="760" height="450" fill="#f5fbf7"/>
+  <text x="380" y="50" text-anchor="middle" font-family="Arial" font-size="26" fill="#0c3c60" font-weight="700">Conclusions and Future Work</text>
+  <rect x="80" y="95" width="600" height="95" rx="12" fill="#fff" stroke="#87b8a2"/>
+  <text x="380" y="132" text-anchor="middle" font-family="Arial" font-size="21" fill="#1d5c4d" font-weight="700">Level III Digital Twin Achieved</text>
+  <text x="380" y="160" text-anchor="middle" font-family="Arial" font-size="15" fill="#346f60">Real-time monitoring of pyrolysis conversion stages</text>
+  <rect x="80" y="210" width="280" height="160" rx="12" fill="#fff" stroke="#8fb0ca"/>
+  <text x="220" y="248" text-anchor="middle" font-family="Arial" font-size="19" fill="#1f4a6d" font-weight="700">Validated Feasibility</text>
+  <text x="220" y="275" text-anchor="middle" font-family="Arial" font-size="14" fill="#456788">Thermochemical</text>
+  <text x="220" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#456788">conversion tracking</text>
+  <rect x="400" y="210" width="280" height="160" rx="12" fill="#fff" stroke="#8fb0ca"/>
+  <text x="540" y="248" text-anchor="middle" font-family="Arial" font-size="19" fill="#1f4a6d" font-weight="700">Next Stage</text>
+  <text x="540" y="275" text-anchor="middle" font-family="Arial" font-size="14" fill="#456788">Expanded experiments</text>
+  <text x="540" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#456788">Predictive modeling</text>
+</svg>
