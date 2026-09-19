@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="450" viewBox="0 0 760 450" role="img" aria-label="Results diagram">
+  <rect width="760" height="450" fill="#f6fbff"/>
+  <text x="380" y="48" text-anchor="middle" font-family="Arial" font-size="26" fill="#0c3c60" font-weight="700">Key Results</text>
+  <rect x="45" y="90" width="320" height="160" rx="12" fill="#fff" stroke="#89a7c2"/>
+  <text x="205" y="118" text-anchor="middle" font-family="Arial" font-size="17" fill="#1f4a6d" font-weight="700">Mass Loss / Temperature Trend</text>
+  <polyline points="80,220 120,205 160,190 200,160 240,135 280,110 330,95" fill="none" stroke="#00796b" stroke-width="4"/>
+  <polyline points="80,230 120,228 160,215 200,198 240,180 280,170 330,160" fill="none" stroke="#c0392b" stroke-width="4"/>
+  <text x="260" y="238" font-family="Arial" font-size="13" fill="#00796b">300°C</text>
+  <text x="300" y="178" font-family="Arial" font-size="13" fill="#c0392b">310°C</text>
+  <rect x="395" y="90" width="320" height="160" rx="12" fill="#fff" stroke="#89a7c2"/>
+  <text x="555" y="118" text-anchor="middle" font-family="Arial" font-size="17" fill="#1f4a6d" font-weight="700">Van Krevelen Shift</text>
+  <circle cx="500" cy="200" r="7" fill="#00796b"/>
+  <circle cx="610" cy="165" r="7" fill="#c0392b"/>
+  <line x1="500" y1="200" x2="610" y2="165" stroke="#2f7ebd" stroke-width="3" marker-end="url(#a)"/>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2f7ebd"/>
+    </marker>
+  </defs>
+  <text x="485" y="220" font-family="Arial" font-size="13" fill="#00796b">H/C 1.058</text>
+  <text x="600" y="185" font-family="Arial" font-size="13" fill="#c0392b">0.990</text>
+  <text x="495" y="238" font-family="Arial" font-size="13" fill="#00796b">O/C 0.507</text>
+  <text x="600" y="202" font-family="Arial" font-size="13" fill="#c0392b">0.464</text>
+  <rect x="90" y="285" width="580" height="120" rx="12" fill="#fff" stroke="#8cbca9"/>
+  <text x="380" y="325" text-anchor="middle" font-family="Arial" font-size="24" fill="#155a4a" font-weight="700">Solid Yield: 45.2 wt% → 37.4 wt%</text>
+  <text x="380" y="355" text-anchor="middle" font-family="Arial" font-size="16" fill="#2e6f60">Higher treatment temperature intensified devolatilization</text>
+</svg>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Twin Framework for Biomass Pyrolysis Reactor</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --primary: #0c3c60;
+      --accent: #00796b;
+      --text: #1d2939;
+      --muted: #5f6c7b;
+      --border: #dce5ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(165deg, #f8fbff 0%, #eef4fa 100%);
+      line-height: 1.4;
+    }
+
+    .poster {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    .header {
+      background: linear-gradient(100deg, var(--primary), #124f79);
+      color: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(12, 60, 96, 0.25);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+    }
+
+    .authors {
+      margin-top: 12px;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .affiliation {
+      margin-top: 6px;
+      color: #d4e7ff;
+      font-size: 0.98rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 1.25rem;
+      border-bottom: 3px solid #e4edf6;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 0 0 7px; }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .figure {
+      border: 1px solid #d4dfeb;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fbfdff;
+    }
+
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      font-size: 0.83rem;
+      color: var(--muted);
+      padding: 8px 10px 10px;
+      border-top: 1px solid #e6edf5;
+    }
+
+    .footer {
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: #eaf4ef;
+      border: 1px solid #d1e8d8;
+      color: #1f5132;
+      font-weight: 600;
+    }
+
+    @media (max-width: 1080px) {
+      .grid { grid-template-columns: 1fr; }
+      .card { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page {
+        size: A0 landscape;
+        margin: 10mm;
+      }
+      body {
+        background: #fff;
+      }
+      .poster {
+        max-width: none;
+        padding: 0;
+      }
+      .card, .header, .footer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <header class="header">
+      <h1>Development of a Digital Twin Framework for a Biomass Pyrolysis Reactor Applied to Biochar Production</h1>
+      <div class="authors"><strong>Arthur Moreira Lauro</strong> · <strong>Pedro Paulo de Oliveira Rodrigues</strong></div>
+      <div class="affiliation">University of Brasília (UnB), Brasília, Brazil</div>
+    </header>
+
+    <section class="grid" aria-label="Scientific poster content">
+      <article class="card">
+        <div>
+          <h2>Introduction</h2>
+          <ul>
+            <li>Climate change mitigation and biomass-based energy conversion are urgent global priorities.</li>
+            <li>Brazil generated approximately <span class="highlight">779.6 million tons</span> of agricultural residues in 2021.</li>
+            <li>Forestry activities produced around <span class="highlight">4.95 million tons</span> of residues in 2019.</li>
+            <li>Biochar offers potential for soil quality improvement and long-term carbon storage.</li>
+            <li>Efficient pyrolysis requires reliable real-time process monitoring and decision support.</li>
+          </ul>
+        </div>
+        <figure class="figure">
+          <img src="assets/introduction.svg" alt="Biomass residues to biochar pathway and climate context" />
+          <figcaption class="caption">Context: residue availability and biochar pathway for sustainable carbon management.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Methodology</h2>
+          <ul>
+            <li>Laboratory-scale fixed-bed pyrolysis reactor instrumented with Arduino-based control.</li>
+            <li>Digital twin framework integrated real-time data acquisition and process state tracking.</li>
+            <li><em>Eucalyptus grandis</em> wood pellets were used as feedstock.</li>
+            <li>Continuous temperature sensing and mass monitoring were implemented.</li>
+            <li>Node-RED dashboard supported real-time visualization and supervisory analysis.</li>
+            <li>Thermochemical quality evaluated through Van Krevelen metrics (H/C and O/C ratios).</li>
+          </ul>
+        </div>
+        <figure class="figure">
+          <img src="assets/methodology.svg" alt="Digital twin architecture with sensors, reactor, and Node-RED dashboard" />
+          <figcaption class="caption">Experimental setup and data flow between physical reactor and digital twin.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Results</h2>
+          <ul>
+            <li>Thermogravimetric behavior was compared at <span class="highlight">300°C</span> and <span class="highlight">310°C</span>.</li>
+            <li>Distinct mass-loss profiles and temperature evolution curves were observed between treatments.</li>
+            <li>Van Krevelen analysis indicated H/C reduction from <span class="highlight">1.058 → 0.990</span>.</li>
+            <li>O/C ratio decreased from <span class="highlight">0.507 → 0.464</span>.</li>
+            <li>Solid yield dropped from <span class="highlight">45.2 wt%</span> to <span class="highlight">37.4 wt%</span>, indicating stronger devolatilization.</li>
+          </ul>
+        </div>
+        <figure class="figure">
+          <img src="assets/results.svg" alt="Mass and temperature profiles with Van Krevelen trend and yield reduction" />
+          <figcaption class="caption">Temperature-dependent conversion behavior and elemental-ratio evolution.</figcaption>
+        </figure>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Conclusions</h2>
+          <ul>
+            <li>The digital twin successfully captured key biomass pyrolysis stages.</li>
+            <li>The platform reached a <span class="highlight">Level III digital twin capability</span> for real-time monitoring.</li>
+            <li>The system proved feasible for monitoring thermochemical conversion processes.</li>
+            <li>Acquired data supports preliminary biochar quality assessment.</li>
+            <li>Future work includes broader experimental campaigns and predictive model integration.</li>
+          </ul>
+        </div>
+        <figure class="figure">
+          <img src="assets/conclusions.svg" alt="Summary of conclusions and future modeling roadmap" />
+          <figcaption class="caption">Validated monitoring framework and next steps toward predictive digital twin operation.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <div class="footer">Keywords: Biomass Pyrolysis · Digital Twin · Biochar · Real-Time Monitoring · Thermochemical Conversion</div>
+  </main>
+</body>
+</html>
