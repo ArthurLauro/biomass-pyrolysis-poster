@@ -5,4 +5,4 @@ Scientific conference poster (HTML/CSS) for:
 
 ## Open locally
 
-Open `/home/runner/work/biomass-pyrolysis-poster/biomass-pyrolysis-poster/index.html` in a browser.
+From the repository root, open `index.html` in a browser.
