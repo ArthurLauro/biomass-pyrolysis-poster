@@ -127,13 +127,14 @@
       font-weight: 600;
     }
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1280px) {
       .grid { grid-template-columns: 1fr; }
       .card { grid-template-columns: 1fr; }
     }
 
     @media print {
       @page {
+        size: A0 landscape;
         margin: 10mm;
       }
       body {
